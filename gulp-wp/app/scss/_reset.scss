@@ -38,6 +38,12 @@ textarea,
 select {
     font: inherit;
 }
+button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: inherit;
+}
 
 ul[class],
 li[class] {
