@@ -1,22 +1,25 @@
-@import 'mixins';
+@import "mixins";
 html,
 body {
-    height: 100%;
+  height: 100%;
+}
+a {
+  cursor: pointer;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-.container{
+.container {
   // max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -34,66 +37,67 @@ body {
 //     max-width: fit-content;
 // }
 
-
-
-body{
-    background-color: $gray;
-    font-family: "Montserrat";
-    color: #fff;
+body {
+  background-color: $gray;
+  font-family: "Montserrat";
+  color: #fff;
 }
 
-.container{
-    width: 100%;
-    padding: 0 $containerGap;
+.container {
+  width: 100%;
+  padding: 0 $containerGap;
 }
 
-.icon-size{
-    width: 30px;
-    height: 30px;
+.icon-size {
+  width: 30px;
+  height: 30px;
 }
-.descr{
-    @include textStyle($fontSize: 18px);
+.descr {
+  @include textStyle($fontSize: 18px);
 }
-.section__title{
-    @include textStyle($fontSize: 48px, $fontWeight: 500);
-    text-align: center;
-    margin-bottom: 35px;
-
-
+.section__title {
+  @include textStyle($fontSize: 48px, $fontWeight: 500);
+  text-align: center;
+  margin-bottom: 35px;
 }
-.section__text{
-    @include textStyle($fontSize: 18px, $textTransform: none);
+.section__text {
+  @include textStyle($fontSize: 18px, $textTransform: none);
 }
-.section:not(:first-child){
-    padding-top: $sectionGap;
+.section:not(:first-child) {
+  padding-top: $sectionGap;
 }
-.section:not(:last-child){
-    padding-bottom: $sectionGap;
+.section {
+  padding-bottom: $sectionGap;
 }
-
-.gray-btn{
-    border-radius: 5px;
-    padding: 14px 22px;
-    box-shadow: 5px 5px 10px 0px #018635, -5px -5px 10px 0px #0039AA;
-    background-color: $gray;
-    display: flex;
-    align-items: center;
-    max-width: max-content;
-    svg{
-        margin-right: 20px;
-    }
+.footer {
+  padding: $sectionGap 0;
 }
-.white-btn{
-
-    @include textStyle($color: $gray, $fontSize: 16px, $fontWeight: 500, $textTransform: none);
-    display: block;
-    background-color: $white;
-    padding: 15px 33px;
-    border-radius: 5px;
-    border: 1px solid #0039AA;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    max-width: max-content;
-
+.gray-btn {
+  border-radius: 5px;
+  padding: 14px 22px;
+  box-shadow: 5px 5px 10px 0px #018635, -5px -5px 10px 0px #0039aa;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  svg {
+    margin-right: 20px;
+  }
+}
+.white-btn {
+  @include textStyle(
+    $color: $gray,
+    $fontSize: 16px,
+    $fontWeight: 500,
+    $textTransform: none
+  );
+  display: block;
+  background-color: $white;
+  padding: 15px 33px;
+  border-radius: 5px;
+  border: 1px solid #0039aa;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
 }
