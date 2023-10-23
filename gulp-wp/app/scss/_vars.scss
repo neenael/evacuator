@@ -23,12 +23,22 @@
 // $text: #F2F1ED;
 // $background: #3B3B3B;
 // $line: #BCB3A9;
-$containerGap: 193px;
+// $containerGap: 193px;
+
+$containerWidth_gte_1920: 1521px;
+$containerWidth_1280: 1041px;
+$containerWidth_1024: 816px;
+$containerWidth_768: 610px;
+$containerWidth_480: 380px;
+$containerWidth_lte_320: 252px;
+
 $subContainersWidth: 1140px;
 
 $sectionGap: 50px;
+$sectionGap_768: 29px;
+
 $white: #fff;
 $gray: #363636;
-$blue: #0039AA;
+$blue: #0039aa;
 $green: #018635;
-$cardGradient: linear-gradient(#FFFFFF00, #FFFFFF82, #FFFFFF00);
+$cardGradient: linear-gradient(#ffffff00, #ffffff82, #ffffff00);

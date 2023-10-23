@@ -10,6 +10,9 @@
   align-items: flex-end;
   padding-top: 14px;
   padding-bottom: 14px;
+  .header__phone {
+    margin-left: 100px;
+  }
 }
 .nav__menu {
   display: flex;
@@ -43,9 +46,121 @@
   border-radius: 5px;
   border: 1px solid #0039aa;
   text-align: center;
-  margin-left: 100px;
 }
 
+.burger__wrapper {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  z-index: 3;
+}
+
+.burger__social {
+  margin-right: 0;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: $gray;
+  border-radius: 9px;
+  opacity: 1;
+
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+  left: 0;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  left: 0;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+  width: 20px;
+  right: 0;
+}
+
+.burger.active span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: -1px;
+  left: 5px;
+}
+
+.burger.active span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger.active span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 4px;
+  width: 100%;
+}
+.header__nav--burger {
+  position: fixed;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  background: rgba(54, 54, 54, 0.95);
+  padding: 70px 50px;
+
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+
+    li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.header__nav--burger.active {
+  transform: translateX(0);
+}
+.burger.active span {
+  background-color: $white;
+}
+.burger__social {
+  display: flex;
+  align-items: center;
+}
+
+.burger__social-icon:not(:last-child) {
+  margin-right: 30px;
+}
+.buger__phone {
+  display: flex;
+  align-items: center;
+}
 //hero
 .hero-section {
   position: relative;
@@ -96,20 +211,21 @@
     content: "";
     top: 0;
     bottom: 0;
-    width: $containerGap;
+    width: 100%;
     display: block;
   }
 
   &:nth-child(2n) {
     flex-direction: row-reverse;
+    img {
+      left: 10px;
+    }
+
     .services__item__content {
       clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
-      align-items: flex-end;
+      align-items: flex-start;
+      padding-left: 37%;
       background-position: 10% center;
-
-      img {
-        left: 10px;
-      }
     }
     &::after {
       margin-right: 99.99999%;
@@ -130,9 +246,6 @@
     }
   }
 
-  &:not(:first-child) {
-    margin-top: 50px;
-  }
   &:not(:last-child) {
     margin-bottom: 50px;
   }
@@ -221,7 +334,7 @@
 //additional services
 
 .additional-services__price {
-  @include textStyle($fontSize: 18px, $fontWeight: 500);
+  @include textStyle($fontSize: 18px, $fontWeight: 500, $textTransform: none);
   width: 100%;
   max-width: $subContainersWidth;
   margin: 0 auto;
@@ -243,7 +356,7 @@
 
 //info
 .info__section__text {
-  @include textStyle($fontSize: 18px);
+  @include textStyle($fontSize: 18px, $textTransform: none);
   margin-bottom: 35px;
 }
 
@@ -326,7 +439,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 60px 20px 20px;
 
   transition: border-color 0.2s ease-in-out;
   position: relative;
@@ -339,6 +452,7 @@
     position: absolute;
     content: "";
     width: 2px;
+
     height: 30px;
     background-color: $green;
     right: 30px;
@@ -349,6 +463,7 @@
     content: "";
     width: 30px;
     height: 2px;
+
     background-color: $green;
     right: 16px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -368,13 +483,15 @@
   flex-direction: column;
   align-items: center;
 }
+.container.application-form__container {
+  display: flex;
+  align-items: center;
+}
 
 .feedback__slider {
   width: 100%;
   max-width: 950px;
   position: relative;
-
-  // background-color: $white;
 
   .slick-slide {
     @include textStyle($color: $gray, $fontSize: 18px, $textTransform: none);

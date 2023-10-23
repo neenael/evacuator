@@ -35,30 +35,74 @@
 
 <body>
     <div class="wrapper">
+        <nav class="header__nav--burger nav" id="bugrer-menu">
+            <ul class="nav__menu">
+                <li class="nav__menu__item">
+                    <a href="#services" class="header__nav--burger__a">
+                        УСЛУГИ И ЦЕНЫ
+                    </a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="#info" class="header__nav--burger__a">
+                        ПРЕИМУЩЕСТВА
+                    </a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="#faq" class="header__nav--burger__a">
+                        ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                    </a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="#feedback" class="header__nav--burger__a">
+                        ОТЗЫВЫ
+                    </a>
+                </li>
+                <li class="nav__menu__item burger__social">
+                    <a href="#" class="burger__social-icon">
+                        <img src="./images/icons/vk.png" alt="VK" class="icon-size">
+                    </a>
+                    <a href="#" class="burger__social-icon">
+                        <img src="./images/icons/whatsapp.png" alt="whatsapp" class="icon-size">
+                    </a>
+                    <a href="#" class="burger__social-icon">
+                        <img src="./images/icons/telegram.png" alt="telegram" class="icon-size">
+                    </a>
+                </li>
+                <li class="nav__menu__item buger__phone">
+
+
+                    <a href="tel:88888888888" class="header__phone">
+                        8&nbsp;888&nbsp;888&nbsp;88&nbsp;88
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
 
         <main class="main">
-            <section class="hero-section section hero">
+            <section class="hero-section section hero" id="hero">
                 <header class="header">
                     <div class="container header__container">
+
                         <nav class="header__nav nav">
                             <ul class="nav__menu">
                                 <li class="nav__menu__item">
-                                    <a href="#">
+                                    <a href="#services">
                                         УСЛУГИ И ЦЕНЫ
                                     </a>
                                 </li>
                                 <li class="nav__menu__item">
-                                    <a href="#">
+                                    <a href="#info">
                                         ПРЕИМУЩЕСТВА
                                     </a>
                                 </li>
                                 <li class="nav__menu__item">
-                                    <a href="#">
+                                    <a href="#faq">
                                         ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
                                     </a>
                                 </li>
                                 <li class="nav__menu__item">
-                                    <a href="#">
+                                    <a href="#feedback">
                                         ОТЗЫВЫ
                                     </a>
                                 </li>
@@ -86,6 +130,15 @@
                                 8&nbsp;888&nbsp;888&nbsp;88&nbsp;88
                             </a>
                         </div>
+
+                        <div class="burger__wrapper">
+                            <button class="burger" for="burger" type="button" id="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+
                     </div>
                 </header>
                 <div class="container hero__containter">
@@ -118,7 +171,7 @@
                     <!-- <img src="images/content/screen-img.jpg" alt="Truck"> -->
                 </div>
             </section>
-            <section class="services-section section services">
+            <section class="services-section section services" id="services">
                 <div class="container services__container">
                     <h2 class="section__title">
                         УСЛУГИ И ЦЕНЫ
@@ -136,11 +189,11 @@
                                     ЭВАКУАЦИЯ Легкового авто
                                 </h3>
                                 <p class="service__descr descr">
-                                    от 1800 руб
+                                    от 1800&nbsp;руб
                                 </p>
                                 <ul class="service__btns">
                                     <a href="#" class="make-order white-btn">
-                                        Заказать услугу
+                                        Заказать&nbsp;услугу
                                     </a>
                                     <a href="#" class="to-call gray-btn">
                                         Позвонить
@@ -156,11 +209,11 @@
                                     ЭВАКУАЦИЯ КРОССОВЕРА
                                 </h3>
                                 <p class="service__descr descr">
-                                    от 1800 руб
+                                    от 1800&nbsp;руб
                                 </p>
                                 <ul class="service__btns">
                                     <a href="#" class="make-order white-btn">
-                                        Заказать услугу
+                                        Заказать&nbsp;услугу
                                     </a>
                                     <a href="#" class="to-call gray-btn">
                                         Позвонить
@@ -177,11 +230,11 @@
 
                                 </h3>
                                 <p class="service__descr descr">
-                                    от 1800 руб
+                                    от 1800&nbsp;руб
                                 </p>
                                 <ul class="service__btns">
                                     <a href="#" class="make-order white-btn">
-                                        Заказать услугу
+                                        Заказать&nbsp;услугу
                                     </a>
                                     <a href="#" class="to-call gray-btn">
                                         Позвонить
@@ -192,7 +245,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="additional-services-section section additional-services">
+            <section class="additional-services-section section additional-services" id="additional-services">
                 <div class="container additional-services__container">
                     <h2 class="section__title">
                         ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
@@ -204,7 +257,7 @@
                                 Заблокированное колесо/отсутствие колеса
                             </td>
                             <td class="price__row__value">
-                                500 руб
+                                500&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -212,7 +265,7 @@
                                 Отсутствие крюка/буксировочной проушины
                             </td>
                             <td class="price__row__value">
-                                500 руб
+                                500&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -220,7 +273,7 @@
                                 Вытягивание из сугроба/кювета
                             </td>
                             <td class="price__row__value">
-                                от 1500 руб
+                                от 1500&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -228,7 +281,7 @@
                                 Подкатная тележка
                             </td>
                             <td class="price__row__value">
-                                1000 руб
+                                1000&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -236,7 +289,7 @@
                                 Ночной выезд
                             </td>
                             <td class="price__row__value">
-                                1000 руб
+                                1000&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -244,7 +297,7 @@
                                 Ожидание по просьбе клиента/простой
                             </td>
                             <td class="price__row__value">
-                                от 500 руб/час
+                                от 500&nbsp;руб/час
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -252,7 +305,7 @@
                                 Изменение оговоренного маршрута в пути
                             </td>
                             <td class="price__row__value">
-                                от 500 руб
+                                от 500&nbsp;руб
                             </td>
                         </tr>
                         <tr class="price__row">
@@ -260,7 +313,7 @@
                                 Заблокирован руль
                             </td>
                             <td class="price__row__value">
-                                500 руб
+                                500&nbsp;руб
                             </td>
                         </tr>
                     </table>
@@ -269,7 +322,7 @@
                     </a>
                 </div>
             </section>
-            <section class="info-section section info">
+            <section class="info-section section info" id="info">
                 <div class="container info__container">
                     <h2 class="section__title">
                         ЗАБОТА, КАК О СВОЁМ!
@@ -295,7 +348,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="faq-section section faq">
+            <section class="faq-section section faq" id="faq">
                 <div class="container faq__container">
                     <h2 class="section__title">
                         ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
@@ -374,13 +427,11 @@
 
                 </div>
             </section>
-            <section class="feedback-section section feedback">
+            <section class="feedback-section section feedback" id="feedback">
                 <div class="container feedback__container">
                     <h2 class="section__title">
                         ОТЗЫВЫ
                     </h2>
-                    <!-- Место для слайдера с отзывами -->
-
                     <div class="feedback__slider">
                         <div>
                             <p class="feedback__p">Самые благоприятные впечатления.
@@ -423,7 +474,7 @@
 
                 </div>
             </section>
-            <section class="application-form-section section application-form">
+            <section class="application-form-section section application-form" ig="form">
                 <div class="container application-form__container">
                     <div class="application-form__wrapper">
                         <h3 class="application-form__title">
@@ -434,7 +485,7 @@
                         <form action="" method="post">
                             <div class="inputs">
 
-                                <input type="tel" name="telephone" placeholder="Телефон"
+                                <input type="text" name="telephone" placeholder="Телефон"
                                     class="application-form__col__tel" id="phone" required>
                                 <input type="text" name="name" placeholder="Имя" class="application-form__col__name"
                                     required>
@@ -458,13 +509,13 @@
                             </label>
 
                             <button type="submit" class="application-form__col__submit gray-btn">
-                                Заказать услугу
+                                Заказать&nbsp;услугу
                             </button>
                         </form>
                     </div>
                 </div>
             </section>
-            <section class="hint-section section hint">
+            <section class="hint-section section hint" id="hint">
                 <div class="container hint__container">
                     <p class="hint__text">
                         Вызвать эвакуатор в Сыктывкаре» - Основная услуга нашей компании. Если на дороге случилась беда
@@ -508,16 +559,20 @@
                     <nav class="footer__nav">
                         <ul class="footer__nav__menu">
                             <li class="footer__nav__menu__item">
-                                УСЛУГИ И ЦЕНЫ
+                                <a href="#services">УСЛУГИ И ЦЕНЫ</a>
+
                             </li>
                             <li class="footer__nav__menu__item">
-                                ПРЕИМУЩЕСТВА
+                                <a href="#info"> ПРЕИМУЩЕСТВА</a>
+
                             </li>
                             <li class="footer__nav__menu__item">
-                                ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                                <a href="#faq">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+
                             </li>
                             <li class="footer__nav__menu__item">
-                                ОТЗЫВЫ
+                                <a href="#feedback">ОТЗЫВЫ</a>
+
                             </li>
                         </ul>
                     </nav>
@@ -573,8 +628,18 @@
     <script type="text/javascript">
         $('.feedback__slider').slick({
             infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        dots: true,
+                    }
+                },
+            ]
         });
         $('#phone').inputmask("+7 (999) 999-99-99", { placeholder: "_" });
+
     </script>
 
     <script src="js/main.min.js"></script>
