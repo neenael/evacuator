@@ -19,7 +19,9 @@
     "gulp-sass": "^5.0.0",
     "inputmask": "^5.0.8",
     "jquery": "1.11",
+    "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.44.0",
+    "simplebar": "^6.2.5",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {

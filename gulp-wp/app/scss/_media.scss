@@ -28,6 +28,9 @@
   .burger__wrapper {
     display: flex;
   }
+  .hero-section {
+    margin-top: -69.5px;
+  }
   .hero__content {
     padding: 138px 0;
   }
@@ -545,5 +548,13 @@
 
   .application-form__wrapper form {
     padding: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 650px) and (min-width: 450px) {
+  .hero__title {
+    color: $gray;
+    span {
+      color: currentcolor;
+    }
   }
 }
