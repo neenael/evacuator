@@ -1,3 +1,16 @@
+.white-btn, .gray-btn {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,6 +76,19 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+.white-btn, .gray-btn {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 html,
@@ -169,20 +195,10 @@ body.stop-scroll {
 }
 
 .gray-btn {
-  border-radius: 5px;
   padding: 14px 22px;
   -webkit-box-shadow: -5px -5px 10px #0039aa, 5px 5px 10px #018635;
           box-shadow: -5px -5px 10px #0039aa, 5px 5px 10px #018635;
   background-color: #363636;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 .gray-btn svg {
   margin-right: 20px;
@@ -201,16 +217,6 @@ body.stop-scroll {
   padding: 15px 33px;
   border-radius: 5px;
   border: 1px solid #0039aa;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 ::-webkit-scrollbar {
@@ -218,7 +224,7 @@ body.stop-scroll {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(170deg, rgb(0, 57, 170) 0%, rgb(1, 134, 53) 100%);
+  background: linear-gradient(170deg, #0039aa 0%, rgb(1, 134, 53) 100%);
   border-radius: 5px;
   border: 1px solid rgb(54, 54, 54);
 }
@@ -234,11 +240,11 @@ body.stop-scroll {
   transition: text-shadow 0.2s ease-in-out;
 }
 .link-ui:hover:not(:focus-visible) {
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px #fff;
 }
 .link-ui:focus-visible {
   outline: none;
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px #fff;
 }
 .link-ui:active:not(:focus-visible) {
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
@@ -260,7 +266,7 @@ body.stop-scroll {
   -webkit-box-shadow: -5px -5px 10px #0039aa, 5px 5px 10px #018635;
           box-shadow: -5px -5px 10px #0039aa, 5px 5px 10px #018635;
   background-color: rgb(47, 47, 47);
-  color: #ffffff;
+  color: #fff;
 }
 .gray-btn {
   -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
@@ -1304,6 +1310,19 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.gray-btn, .white-btn {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 @media (max-width: 1800px) {
