@@ -1949,7 +1949,7 @@ svg {
     color: currentcolor;
   }
 }
-@media screen {
+@media screen and (max-width: 768px) {
   body.stop-scroll {
     padding-right: 0;
   }
