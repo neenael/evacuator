@@ -1949,3 +1949,11 @@ svg {
     color: currentcolor;
   }
 }
+@media screen {
+  body.stop-scroll {
+    padding-right: 0;
+  }
+  header.fixed.add-gap {
+    padding-right: 0;
+  }
+}
